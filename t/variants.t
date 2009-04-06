@@ -2,7 +2,6 @@ use strict;
 use warnings;
 
 use Test::More tests => 2;
-use List::MoreUtils qw( minmax );
 
 use_ok 'Text::Variations';
 
@@ -11,7 +10,7 @@ my $tv = Text::Variations->new(
     ' ', [ 'alpha', 'beta', 'gamma' ],
 );
 
-# generate 1000 strings anid check that the mix is correct
+# generate 1000 strings and check that the mix is correct
 my %counts = ();
 $counts{"$tv"}++ for 1 .. 10000;
 

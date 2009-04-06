@@ -1,4 +1,7 @@
 0.01 - 4 Apr 2009
     * first release to CPAN
 
+0.02 - 5 Apr 2009
+    * removed List::MoreUtils from test as not needed.
+
 
